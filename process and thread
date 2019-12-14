@@ -1,0 +1,35 @@
+## Difference between Process and Thread
+
+ # Process:
+Process means any program is in execution. 
+Process control block controls the operation of any process.
+Process control block contains the information about processes 
+for example: Process priority, process id, process state, CPU, register etc. 
+A process can creates other processes which are known as Child Processes.
+Process takes more time to terminate and it is isolated means it does not share memory with any other process.
+
+ # Thread:
+Thread is the segment of a process means a process can
+have multiple threads and these multiple threads are contained within a process.
+A thread have 3 states: running, ready, and blocked.
+
+Thread takes less time to terminate as compared to process and like process threads do not isolate.
+
+ # Process
+Each process provides the resources needed to execute a program.
+A process has a virtual address space, executable code, open handles to system objects, 
+a security context, a unique process identifier, environment variables, 
+a priority class, minimum and maximum working set sizes, 
+and at least one thread of execution. Each process is started with a single thread,
+often called the primary thread, but can create additional threads from any of its threads.
+
+ # Thread
+A thread is an entity within a process that can be scheduled for execution. 
+All threads of a process share its virtual address space and system resources.
+In addition, each thread maintains exception handlers, a scheduling priority, 
+thread local storage, a unique thread identifier, 
+and a set of structures the system will use to save the thread context until it is scheduled.
+The thread context includes the thread's set of machine registers, the kernel stack, a thread environment block, 
+and a user stack in the address space of the thread's process. 
+Threads can also have their own security context, which can be used for impersonating clients.
+
